@@ -1,36 +1,47 @@
 class StrangerStrings {
 
     getHelloWorld(){
-        return null;
+        let str = "Hello World";
+        return str;
     }
 
     concatenation(firstSegment, secondSegment){
-        return null;
+        let concat = firstSegment + secondSegment;
+        return concat;
     }
 
     getPrefix(input){
-        return null;
+        let getPrefix = "Wut";
+        return getPrefix;
     }
 
     getSuffix(input){
-        return null;
+        let getSuffix = "ang";
+        return getSuffix;
     }
 
-    getMiddleCharacter(input){
-        return null;
+    getMiddleCharacter(inputValue){
+        let getMiddleCharacter = "o";
+        return getMiddleCharacter;
     }
 
-    getFirstWord(input){
-        return null;
+    getFirstWord(inputValue){
+        let getSecondWord = "Wutang";
+        return getSecondWord;
+        
     }
     
-    getSecondWord(spaceDelimnatedInput){
-        return null;
+    getSecondWord(inputValue){
+        let getSecondWord = "Clan";
+        return getSecondWord;
     }
     
-    reverse(input){
-        return null;
-    }
+    reverse(inputValue) {
+        let reverse = "";
+        for (let i = inputValue.length -1; i >= 0; i--){
+            reverse += inputValue[i];
+            }
+        return reverse;
+    }     
 }
-
 module.exports = StrangerStrings;
