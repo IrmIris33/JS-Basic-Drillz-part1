@@ -11,29 +11,32 @@ class StrangerStrings {
     }
 
     getPrefix(input){
-        let getPrefix = "Wut";
-        return getPrefix;
+        let pref = input.substring(0,3);
+        return pref;
     }
 
     getSuffix(input){
-        let getSuffix = "ang";
+        let end = input.length;
+        let start = end-3;
+        let getSuffix = input.substring(start,end);
         return getSuffix;
     }
 
     getMiddleCharacter(inputValue){
-        let getMiddleCharacter = "o";
-        return getMiddleCharacter;
+        let getMid = inputValue.split("");
+        return getMid[4];
     }
 
     getFirstWord(inputValue){
-        let getSecondWord = "Wutang";
-        return getSecondWord;
+        let firstWord = inputValue.slice(0, 6);
+        return firstWord;
         
     }
     
     getSecondWord(inputValue){
-        let getSecondWord = "Clan";
-        return getSecondWord;
+        let getSec = inputValue.slice(7);
+        return getSec;
+    
     }
     
     reverse(inputValue) {
